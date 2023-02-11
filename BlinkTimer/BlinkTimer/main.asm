@@ -21,6 +21,9 @@ START:
     LDI     R16, 0x00
     OUT     TCNT0, R16      ; initial timer value
 
+    LDI     R16, 0xFF
+    OUT     DDRB, R16       ; config port B
+
     LDI     R16, 0x01       ; initial state
     CLR     R17
 
